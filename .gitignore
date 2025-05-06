@@ -1,0 +1,27 @@
+# Environnement virtuel
+.venv/
+venv/
+ENV/
+
+# Fichiers de cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Fichiers locaux
+.DS_Store
+.idea/
+.vscode/
+
+# Fichiers de données et résultats
+*.csv
+*.vcf
+
+# Secrets et configurations locales
+.env
