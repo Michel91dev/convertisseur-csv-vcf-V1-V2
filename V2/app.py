@@ -512,7 +512,7 @@ def main() -> None:
     verifier_decalage_horaire()
 
     # Titre et introduction
-    st.title("Convertisseur CSV vers VCF - v2.0.1")
+    st.title("Convertisseur CSV vers VCF - V2")
     st.markdown("""
     Application développée par Michel Safars pour Romain, futur grand réalisateur de cinéma.
 
