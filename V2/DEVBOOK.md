@@ -62,10 +62,17 @@ Le code est organisé autour de plusieurs fonctions principales :
 - Mode débogage pour afficher le contenu brut du fichier VCF
 - Correction de tous les bugs connus
 
-### Version 2.0.9 (actuelle)
+### Version 2.0.9
 - Mise à jour des métadonnées du projet
 - Amélioration de la documentation
 - Cohérence des versions entre l'application et le projet
+
+### Version 2.1.0 (actuelle)
+- Correction du problème d'importation VCF dans les applications de contacts
+- Suppression de l'en-tête non standard `X-ADDRESSBOOK-NAME` qui causait des problèmes d'importation
+- Uniformisation du titre avec "V2" au lieu de "v2.0.1"
+- Configuration du dépôt GitHub pour le partage du code
+- Améliorations mineures du formatage du code
 
 ## Gestion des noms de colonnes
 
