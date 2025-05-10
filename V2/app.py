@@ -15,8 +15,8 @@ import json
 from typing import Dict, List, Optional, Tuple, Any
 
 # Définition de la version et autres constantes
-APP_VERSION = "2.0.9"
-DATE_CREATION = "2025-05-05"
+APP_VERSION = "2.1.0"
+DATE_CREATION = "2025-05-11"
 TIME_FORMAT = "%Y-%m-%d %H:%M:%S %Z"
 
 # Définition du titre et de la description de l'application
@@ -251,9 +251,8 @@ def convertir_csv_en_vcf(contenu_csv: str, mappings_colonnes: Dict[str, str], no
             st.error("Les colonnes pour le nom et le prénom ne sont pas correctement configurées dans le mapping.")
             return ""
 
-        # Si une note commune est fournie, l'utiliser comme nom du carnet d'adresses
-        if note_commune:
-            vcf_buffer.write(f"X-ADDRESSBOOK-NAME:{note_commune}\n\n")
+        # Nous ne mettons plus X-ADDRESSBOOK-NAME au début du fichier car cela cause des problèmes d'importation
+        # La note commune sera uniquement ajoutée dans chaque fiche individuelle
 
         for contact in lecteur:
             # Fonction helper pour gérer les valeurs None
