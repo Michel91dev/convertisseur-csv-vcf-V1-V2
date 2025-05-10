@@ -60,7 +60,7 @@ Le code est organisé autour de plusieurs fonctions principales :
 - Support des colonnes séparées "Prénom" et "NOM" ou colonne combinée
 - Conservation des majuscules dans les noms de famille
 - Mode débogage pour afficher le contenu brut du fichier VCF
-- Correction de tous les bugs connus
+- Correction de tous les bugs connus.
 
 ### Version 2.0.9
 - Mise à jour des métadonnées du projet
