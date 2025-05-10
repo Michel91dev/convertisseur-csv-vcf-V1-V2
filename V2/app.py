@@ -747,14 +747,14 @@ def main() -> None:
 
         # Case à cocher pour le débogage - placée au niveau de la conversion pour être accessible
         debug_mode = st.checkbox("Afficher le contenu brut du fichier VCF (mode débogage)", value=False)
-        
+
         # Bouton de conversion
         if st.button("Convertir en VCF"):
             # Vérifier que les mappings sont configurés
             # Vérification adaptée pour prendre en compte les colonnes séparées
             a_nom_combine = 'nom' in st.session_state.mappings_colonnes
             a_colonnes_separees = ('prenom' in st.session_state.mappings_colonnes or 'nom_famille' in st.session_state.mappings_colonnes)
-            
+
             if not st.session_state.mappings_colonnes or (not a_nom_combine and not a_colonnes_separees):
                 st.error("Veuillez configurer correctement les champs avant de convertir.")
             else:
